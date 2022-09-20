@@ -7,9 +7,9 @@
     $nav_bar = array(
         "Home" => "/pages/home.php",
         "Article" => "/pages/article.php",
-        "Gallery" => "/pages/events.php",
+        "Gallery" => "/pages/gallery.php",
         "Members" => "/pages/members.php",
-        "Table" => "/pages/education.php"
+        "Table" => "/pages/table.php"
     );
     $useful_links = array(
         "link1" => "http://example.com",

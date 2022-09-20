@@ -7,7 +7,7 @@
     foreach ($nav_bar as $option => $uri) {
       if (str_contains($current_uri ,$uri)) {
         ?>
-        <a href="<?php $uri ?>" class="nav-bar-options-active">
+        <a href="<?php print($uri) ?>" class="nav-bar-options-active">
           <div class="nav-bar-options">
             <?php
             print($option);
@@ -18,7 +18,7 @@
 
       } else {
     ?>
-    <a href="<?php $uri ?>" class="nav-bar-options">
+    <a href="<?php print($uri) ?>" class="nav-bar-options">
       <div class="nav-bar-options">
         <?php
         print($option);
