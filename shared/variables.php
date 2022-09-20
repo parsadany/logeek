@@ -6,12 +6,10 @@
     $company = "Company name";
     $nav_bar = array(
         "Home" => "/pages/home.php",
-        "Preprints" => "/pages/preprints.php",
-        "Events" => "/pages/events.php",
+        "Article" => "/pages/article.php",
+        "Gallery" => "/pages/events.php",
         "Members" => "/pages/members.php",
-        "Education" => "/pages/education.php",
-        "Theses" => "/pages/theses.php",
-        "Courses" => "/pages/courses.php"
+        "Table" => "/pages/education.php"
     );
     $useful_links = array(
         "link1" => "http://example.com",

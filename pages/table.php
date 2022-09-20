@@ -6,6 +6,7 @@ include 'router.php';
 // And they also hast "title" key.
 // independent of the types, the value of the key "data" is allways an array()
 // tables can be included but can't include some other structure.
+$title = "table page";
 $contents = array(
     "type" => "table",
     "title" => "Test Table",

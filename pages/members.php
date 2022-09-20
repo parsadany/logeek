@@ -5,6 +5,7 @@ include 'router.php';
 // Other types are iterable and calls the type template
 // And they also hast "title" key.
 // independent of the types, the value of the key "data" is allways an array()
+$title = "members page";
 $contents = array(
     "type" => "list",
     "data" => array(

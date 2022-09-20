@@ -5,9 +5,11 @@
     <meta charset="UTF-8">
     <meta name="description" content="Logeek framework">
     <meta name="keywords" content="Logeek, php">
+    <meta name="keywords" content="<?php $print_data = ""; foreach($meta_data as $this_meta) { $print_data = $print_data . $this_meta . ", "; } print(substr($print_data,0, strlen($print_data) - 2)) ?>">
     <meta name="author" content="John Doe">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/main.css">
+    <title><?php print($title); ?></title>
 </head>
 
 <body>

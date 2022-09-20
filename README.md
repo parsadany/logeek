@@ -16,6 +16,7 @@ include 'router.php';
 // Other types are iterable and calls the type template
 // And they also hast "title" key.
 // independent of the types, the value of the key "data" is allways an array()
+$title = "home page";
 $contents = array(
     
 );
@@ -42,7 +43,7 @@ parrent data:
 3. table
 4. list objects
 
-child-only data:
+non-parent data:
 1. content
 2. article
 3. form
@@ -154,6 +155,28 @@ $contents = array(
 );
 ```
 
+# Right-to-left support:
+
+If you need ```rtl```, just add this to your CSS and everything will work correctly:
+
+```
+html {
+    direction: rtl;
+}
+```
+
+# Meta Data:
+
+If you need meta data for SEO usage, you can fill the ```$meta_data``` array for every page. this could be differ for every page.
+
+Also, you should set ```$title``` variable in your page to make a different title for every single page.
+
+# Settings:
+
+you should change variables from ```shared/variables.php``` for your site.
+
+Also don't forget to change the ```favicon.ico```.
+
 # for development users:
 
 you can start a simple server on the directory that contains the project with:
@@ -161,9 +184,14 @@ you can start a simple server on the directory that contains the project with:
 or
 ```php7 -S 127.0.0.1:8000```
 and you can see the page on
-http://localhost:8000
+```http://localhost:8000/pages/home.php```
 or 
-http://127.0.0.1:8000
+```http://127.0.0.1:8000/pages/home.php```
+
+And if you need to see the site from other devices in same wifi you can use:
+```php -S 0.0.0.0:8000```
+then you can see the page on
+```http://your-laptop-wifi-ip-address:8000/pages/home.php```
 
 
 also if you need to know the work flow, here it is:
